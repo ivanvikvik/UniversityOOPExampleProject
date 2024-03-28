@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <iostream>
 #include <string>
 
@@ -10,7 +10,7 @@ public:
 	int age;
 	double mark;
 
-	// default constructor (конструктор по умолчанию)
+	// default constructor (РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ)
 	Student() {
 		//cout << "calling default constructor" << endl;
 		name = "no name";
@@ -20,7 +20,7 @@ public:
 
 
 	//// canonical constructor with parameters (arguments)
-	//// канонический конструктор
+	//// РєР°РЅРѕРЅРёС‡РµСЃРєРёР№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 	//Student(string nm, int a, double m) {
 	//	//cout << "calling canonical constructor" << endl;
 	//	name = nm;
