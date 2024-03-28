@@ -10,7 +10,7 @@ public:
 	int age;
 	double mark;
 
-	// default constructor
+	// default constructor (конструктор по умолчанию)
 	Student() {
 		//cout << "calling default constructor" << endl;
 		name = "no name";
@@ -18,15 +18,17 @@ public:
 		mark = 4;
 	}
 
-	// canonical constructor with parameters (arguments)
-	Student(string nm, int a, double m) {
-		//cout << "calling canonical constructor" << endl;
-		name = nm;
-		age = a;
-		mark = m;
-	}
 
-	// constructor with parameters (arguments)
+	//// canonical constructor with parameters (arguments)
+	//// канонический конструктор
+	//Student(string nm, int a, double m) {
+	//	//cout << "calling canonical constructor" << endl;
+	//	name = nm;
+	//	age = a;
+	//	mark = m;
+	//}
+
+	//// constructor with parameters (arguments)
 	Student(string nm) {
 		//cout << "calling canonical constructor" << endl;
 		name = nm;
