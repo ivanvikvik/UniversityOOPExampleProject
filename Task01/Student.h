@@ -10,87 +10,23 @@ private:
 	int age;
 	double mark;
 
-public:
+public:	
+	Student();
+	Student(string nm, int a, double m);	
+	Student(string nm);
+	Student(double m);
+
+	~Student();
+
+	string getName();
+	void setName(string nm);
 	
-	// default constructor (конструктор по умолчанию)
-	Student() {
-		//cout << "calling default constructor" << endl;
-		name = "no name";
-		age = 5;
-		mark = 4;
-		//*mark = new double[5];
-	}
-
-
-	// canonical constructor with parameters (arguments)
-	// канонический конструктор
-	Student(string nm, int a, double m) {
-		//cout << "calling canonical constructor" << endl;
-		name = nm;
-		age = a;
-		mark = m;
-	}
-
-	// constructor with parameters (arguments)
-	Student(string nm) {
-		//cout << "calling constructor with parameters 1" << endl;
-		name = nm;
-		age = 0;
-		mark = 0;
-	}
-
-	// constructor with parameters (arguments)
-	Student(double m) {
-		//cout << "calling constructor with parameters 2" << endl;
-		name = "no name";
-		age = 0;
-		mark = m;
-	}
-
-	//// copy-constructor
-	//Student(const Student& student) {
-
-	//}
+	int getAge();
+	void setAge(int a);
 	
-	// destructor (деструктор)
-	~Student() {
-		//cout << "calling destructor" << endl;
-		//delete[] mark;
-	}
+	double getMark();
+	void setMark(double m);
 
-	string getName() {
-		return name;
-	}
+	string convert();
 
-	void setName(string nm) {
-		name = nm;
-	}
-
-	int getAge() {
-		return age;
-	}
-
-	void setAge(int a) {
-		if (a > 0 && a < 90) {
-			age = a;
-		}
-	}
-
-	double getMark() {
-		return mark;
-	}
-
-	void setMark(double m) {
-		if (m > 0 && m <= 10) {
-			mark = m;
-		}
-	}
-
-	string convert() {
-		string s = "";
-		s += name;
-		s += ": age = " + to_string(age);
-		s += ", mark = " + to_string(mark);
-		return s;
-	}
 };
