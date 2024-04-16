@@ -1,50 +1,10 @@
-#include "Student.h"
-
-// default constructor (конструктор по умолчанию)
-Student::Student() {
-	//cout << "calling default constructor" << endl;
-	name = "no name";
-	age = 5;
-	mark = 4;
-	//*mark = new double[5];
-}
-
-
-// canonical constructor with parameters (arguments)
-// канонический конструктор
-Student::Student(string name, int age, double mark) {
-	//cout << "calling canonical constructor" << endl;
-	this->name = name;
-	this->age = age;
-	this->mark = mark;
-}
-
-// constructor with parameters (arguments)
-Student::Student(string name) {
-	//cout << "calling constructor with parameters 1" << endl;
-	this->name = name;
-	age = 0;
-	mark = 0;
-}
-
-// constructor with parameters (arguments)
-Student::Student(double mark) {
-	//cout << "calling constructor with parameters 2" << endl;
-	name = "no name";
-	age = 0;
-	this->mark = mark;
-}
+п»ї#include "Student.h"
 
 //// copy-constructor
 //Student(const Student& student) {
 
 //}
 
-// destructor (деструктор)
-Student::~Student() {
-	//cout << "calling destructor" << endl;
-	//delete[] mark;
-}
 
 string Student::getName() {
 	return name;
