@@ -1,50 +1,51 @@
 #include "Manager.h"
 
-double Manager::getMaxMark(Student* students, int length) {
-	double max = students[0].getMark();
+double Manager::getMaxMark(Group group) {
+	Student student = group.get(0);
+	double max = student.getMark();
 
-	for (int i = 1; i < length; i++)
+	for (int i = 1; i < group.getSize(); i++)
 	{
-		if (max < students[i].getMark()) {
-			max = students[i].getMark();
+		if (max < group.get(i).getMark()) {
+			max = group.get(i).getMark();
 		}
 	}
 
 	return max;
 }
 
-double Manager::getMinMark(Student* students, int length) {
-	double min = students[0].getMark();
+double Manager::getMinMark(Group group) {
+	double min = group.get(0).getMark();
 
-	for (int i = 1; i < length; i++)
+	for (int i = 1; i < group.getSize(); i++)
 	{
-		if (min < students[i].getMark()) {
-			min = students[i].getMark();
+		if (min < group.get(i).getMark()) {
+			min = group.get(i).getMark();
 		}
 	}
 
 	return min;
 }
 
-double Manager::calcAvgMark(Student* students, int length) {
+double Manager::calcAvgMark(Group group) {
 	double avg = 0;
 
-	for (int i = 0; i < length; i++)
+	for (int i = 0; i < group.getSize(); i++)
 	{
-		avg += students[i].getMark();
+		avg += group.get(i).getMark();
 	}
 
-	return avg / length;
+	return avg / group.getSize();
 }
 
-Student Manager::getBestStudent(Student* students, int length) {
-	double bestMark = getMaxMark(students, length);
+Student Manager::getBestStudent(Group group) {
+	double bestMark = getMaxMark(group);
 	Student st = NULL;
 
-	for (int i = 0; i < length; i++)
+	for (int i = 0; i < group.getSize(); i++)
 	{
-		if (students[i].getMark() == bestMark) {
-			st = students[i];
+		if (group.get(i).getMark() == bestMark) {
+			st = group.get(i);
 			break;
 		}
 	}

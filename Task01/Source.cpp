@@ -2,11 +2,12 @@
 #include <iostream>
 
 int main() {
-	Student st1();
-	Student st2();
+	Group group;
+	Student st{ "Alex", 16, 9 };
 
-	//Student* st2 = new Student();
-	//delete st2;
+	group.add(st);
+
+	cout << group.get(1).convert() << endl;
 
 	return 0;
 }
