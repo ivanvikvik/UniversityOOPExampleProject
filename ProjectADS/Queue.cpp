@@ -20,8 +20,6 @@ void Queue::enqueue(int element) {
 	size++;
 }
 
-
-
 int Queue::dequeue() {
 	if (!isEmpty()) {
 		int* temp = new int[size - 1];

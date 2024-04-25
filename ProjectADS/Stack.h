@@ -2,14 +2,14 @@
 #include <string>
 using namespace std;
 
-class Queue
+class Stack
 {
 private:
-	int* queue;
+	int* stack;
 	int size{ 0 };
 public:
-	void enqueue(int element);
-	int dequeue();
+	void push(int element);
+	int pop();
 	int peek();
 	int getSize();
 	bool isEmpty();
