@@ -66,7 +66,7 @@ Student Group::get(int index) {
 		return list[index];
 	}
 
-	return NULL;	//Student()
+	return Student();	//Student()
 }
 
 string Group::getInfo() {
@@ -75,7 +75,7 @@ string Group::getInfo() {
 	for (int i = 0; i < size; i++)
 	{
 		s += "\n" + to_string(i + 1) + ") ";
-		s += list[i].convert();
+		s += list[i].getInfo();
 	}
 
 	return s;

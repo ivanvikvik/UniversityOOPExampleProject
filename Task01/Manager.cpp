@@ -40,7 +40,7 @@ double Manager::calcAvgMark(Group group) {
 
 Student Manager::getBestStudent(Group group) {
 	double bestMark = getMaxMark(group);
-	Student st = NULL;
+	Student st;
 
 	for (int i = 0; i < group.getSize(); i++)
 	{
