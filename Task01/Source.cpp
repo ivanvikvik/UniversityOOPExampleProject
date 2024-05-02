@@ -5,7 +5,10 @@
 using namespace std;
 
 int main() {
-	Professor prof1;
+	Worker human;
+
+	//human.id = 100;
+	//cout << human.id << endl;
 
 	/*Worker worker1;
 	worker1.setName("Alex");
