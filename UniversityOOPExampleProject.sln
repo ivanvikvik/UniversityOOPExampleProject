@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Task01", "Task01\Task01.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProjectADS", "ProjectADS\ProjectADS.vcxproj", "{1D063070-A328-4015-AC79-A4D68D638A35}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntegerProject", "IntegerProject\IntegerProject.vcxproj", "{4216A704-628D-4204-98AB-00B55B0383A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,16 @@ Global
 		{1D063070-A328-4015-AC79-A4D68D638A35}.Release|x64.Build.0 = Release|x64
 		{1D063070-A328-4015-AC79-A4D68D638A35}.Release|x86.ActiveCfg = Release|Win32
 		{1D063070-A328-4015-AC79-A4D68D638A35}.Release|x86.Build.0 = Release|Win32
+		{4216A704-628D-4204-98AB-00B55B0383A3}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{4216A704-628D-4204-98AB-00B55B0383A3}.Debug|x64.ActiveCfg = Debug|x64
+		{4216A704-628D-4204-98AB-00B55B0383A3}.Debug|x64.Build.0 = Debug|x64
+		{4216A704-628D-4204-98AB-00B55B0383A3}.Debug|x86.ActiveCfg = Debug|Win32
+		{4216A704-628D-4204-98AB-00B55B0383A3}.Debug|x86.Build.0 = Debug|Win32
+		{4216A704-628D-4204-98AB-00B55B0383A3}.Release|Any CPU.ActiveCfg = Release|Win32
+		{4216A704-628D-4204-98AB-00B55B0383A3}.Release|x64.ActiveCfg = Release|x64
+		{4216A704-628D-4204-98AB-00B55B0383A3}.Release|x64.Build.0 = Release|x64
+		{4216A704-628D-4204-98AB-00B55B0383A3}.Release|x86.ActiveCfg = Release|Win32
+		{4216A704-628D-4204-98AB-00B55B0383A3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
