@@ -7,6 +7,12 @@ using namespace std;
 int main() {
 	Worker human;
 
+	Student st{ "Alex", 14, 5 };
+
+	st = st + 5;
+
+	cout << st.getInfo() << endl;
+
 	//human.id = 100;
 	//cout << human.id << endl;
 

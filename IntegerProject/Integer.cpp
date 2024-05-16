@@ -42,3 +42,34 @@ Integer Integer::pow(int n) {
 Integer Integer::opp() {
 	return Integer(-value);
 }
+
+//// binary operators overloading
+//Integer Integer::operator+(Integer integer) {
+//	return add(integer);
+//}
+//
+//Integer Integer::operator-(Integer integer) {
+//	return sub(integer);
+//}
+
+Integer Integer::operator*(Integer integer) {
+	Integer temp{ value * integer.getValue() };
+	return temp;
+}
+
+Integer Integer::operator/(Integer integer) {
+	return div(integer);
+}
+
+Integer Integer::operator%(Integer integer) {
+	return mod(integer);
+}
+
+Integer Integer::operator^(Integer integer) {
+	return pow(integer.getValue());
+}
+
+//// unary operators overloading
+//Integer Integer::operator-() {
+//	return opp();
+//}

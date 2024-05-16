@@ -20,4 +20,12 @@ public:
 	void setMark(double m);
 
 	string getInfo();
+
+	Student operator+(int number) {
+		if (mark + number <= 10 || mark + number >= 0) {
+			mark += number;
+		}
+
+		return *this;
+	}
 };
