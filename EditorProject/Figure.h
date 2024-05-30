@@ -18,6 +18,6 @@ public:
 
 	virtual double perimeter() = 0;
 	virtual double square() = 0;
-	virtual string draw() = 0;
+	virtual string draw();
 };
 

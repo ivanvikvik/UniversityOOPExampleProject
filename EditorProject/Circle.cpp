@@ -21,8 +21,7 @@ double Circle::square() {
 }
 
 string Circle::draw() {
-	string msg = "Circle: start poin x = "
-		+ to_string(x) + ", y = " + to_string(y)
+	string msg = "Circle: " + Figure::draw()
 		+ "; radius = " + to_string(radius);
 
 	return msg;

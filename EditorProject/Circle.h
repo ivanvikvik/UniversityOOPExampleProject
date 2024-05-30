@@ -15,6 +15,6 @@ public:
 
 	double perimeter() override;
 	double square() override;
-	string draw() override;
+	string draw();
 };
 

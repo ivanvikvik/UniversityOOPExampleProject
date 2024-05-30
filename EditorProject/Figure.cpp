@@ -15,3 +15,8 @@ void Figure::setX(int x) {
 void Figure::setY(int y) {
 	this->y = y;
 }
+
+string Figure::draw() {
+	return "start poin x = " + to_string(x)
+		+ ", y = " + to_string(y);
+}
